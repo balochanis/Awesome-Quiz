@@ -1,5 +1,10 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #254464 !important;
 }
 
 .App-logo {
@@ -35,4 +40,151 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom CSS Styling */
+
+/* Quiz Styles */
+.quiz,
+.score {
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+.quiz-header {
+  color: #61dafb;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+.quiz-timer,
+.timer-seconds {
+  border-radius: 4px;
+}
+
+.quiz-timer {
+  padding: 10px;
+  background-color: #61dafb;
+  color: #282c34;
+  flex-direction: row;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.timer-seconds {
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+.quiz-progress {
+  height: 6px;
+}
+
+.question {
+  color: white;
+}
+
+.question h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quiz-footer {
+  /* background-color: violet; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+}
+
+.question-status {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.question-status > * {
+  padding: 4px;
+}
+
+.question-number,
+.total-questions {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 576px) {
+  .quiz-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .quiz-timer {
+    margin: 0 0;
+  }
+
+  .question h3 {
+    padding: 10px 0;
+  }
+
+  .quiz-footer {
+    flex-direction: row;
+    margin: unset;
+    justify-content: space-between;
+  }
+
+  .question-status {
+    margin: unset;
+  }
+}
+
+.score
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.score svg
+{
+  margin: auto;
+  padding: 20px;
+}
+
+.check-circle
+{
+  width: 100px;
+  height: 100px;
+}
+
+
+.review-btn
+{
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
